@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Colocar el fondo detrás del contenido */
+  animation: colores 10s ease infinite; /* Animación de colores durante 10 segundos */
+}
+
+@keyframes colores {
+  0% { background-color: #ff0000; } /* Rojo */
+  25% { background-color: #00ff00; } /* Verde */
+  50% { background-color: #0000ff; } /* Azul */
+  75% { background-color: #ffff00; } /* Amarillo */
+  100% { background-color: #ff00ff; } /* Magenta */
+}
